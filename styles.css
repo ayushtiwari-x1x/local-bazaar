@@ -1,0 +1,138 @@
+
+/* Local Bazaar - Base Styles */
+
+:root {
+  --primary: #16794b;
+  --primary-dark: #105c38;
+  --background: #f7f9f7;
+  --surface: #ffffff;
+  --text: #17231c;
+  --muted: #65736a;
+  --border: #e1e8e2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--primary);
+  color: #ffffff;
+  padding: 28px 7%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -1px;
+}
+
+header p {
+  margin: 6px 0 0;
+  color: #e4f5e9;
+  font-size: 1.05rem;
+}
+
+main {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  padding: 42px 0 60px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+section:first-child {
+  background: #e8f5ec;
+  padding: 36px;
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+section p {
+  color: var(--muted);
+}
+
+section div {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 16px;
+  box-shadow: 0 4px 14px rgba(20, 50, 30, 0.04);
+}
+
+section div p {
+  margin-bottom: 0;
+}
+
+footer {
+  background: #12271b;
+  color: #e4eee7;
+  padding: 24px 7%;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  main > section:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  main > section:nth-child(2) h2,
+  main > section:nth-child(2) > p {
+    grid-column: 1 / -1;
+  }
+
+  main > section:nth-child(2) div {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 24px 5%;
+  }
+
+  main {
+    width: 90%;
+    padding-top: 28px;
+  }
+
+  section:first-child {
+    padding: 24px;
+  }
+
+  section div {
+    padding: 20px;
+  }
+}
