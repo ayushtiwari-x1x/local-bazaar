@@ -135,4 +135,52 @@ footer p {
   section div {
     padding: 20px;
   }
+/* Search bar styling */
+.search-section {
+  display: flex;
+  gap: 10px;
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 24px;
+}
+
+#product-search {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #d7e4db;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+#product-search:focus {
+  border-color: #17794e;
+  box-shadow: 0 0 0 3px rgba(23, 121, 78, 0.12);
+}
+
+#search-button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #17794e;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background: #11633f;
+}
+
+@media (max-width: 480px) {
+  .search-section {
+    padding: 0 16px;
+  }
+
+  #search-button {
+    padding: 12px 16px;
+  }
+}
+
 }
