@@ -1,59 +1,134 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Local Bazaar helps you discover products from people and local shops in your area.">
+
+  <meta name="description" content="Discover second-hand products and shop from local merchants in your neighbourhood with Local Bazaar.">
+
+  <meta name="theme-color" content="#166534">
+
   <title>Local Bazaar | Your Neighbourhood Marketplace</title>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
-    <h1>Local Bazaar</h1>
-    <p>Your neighbourhood. Your marketplace.</p>
+    <div class="header-content">
+      <a href="./" class="brand" aria-label="Local Bazaar home">
+        <span class="brand-icon" aria-hidden="true">🛍️</span>
+        <span>Local Bazaar</span>
+      </a>
+
+      <p class="tagline">Your neighbourhood. Your marketplace.</p>
+    </div>
   </header>
 
-<section class="search-section">
-  <input
-    type="search"
-    id="product-search"
-    placeholder="Search products or local shops..."
-    aria-label="Search products or local shops"
-  >
-  <button type="button" id="search-button">Search</button>
-</section>
-
   <main>
-    <section>
-      <h2>Welcome to Local Bazaar</h2>
-      <p>Discover products from people and local shops near you.</p>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-label">YOUR LOCAL MARKETPLACE</span>
+
+        <h1>Discover great finds.<br>Support local businesses.</h1>
+
+        <p>
+          From pre-loved treasures to everyday essentials,
+          discover more right in your neighbourhood.
+        </p>
+
+        <form class="search-section" id="search-form" role="search">
+          <label class="visually-hidden" for="product-search">
+            Search products or local shops
+          </label>
+
+          <input
+            type="search"
+            id="product-search"
+            name="q"
+            placeholder="What are you looking for today?"
+            aria-label="Search products or local shops"
+          >
+
+          <button type="submit" id="search-button">Search ↗</button>
+        </form>
+
+        <p class="hero-note">Explore nearby listings and discover your local favourites.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>What are you looking for?</h2>
-      <p>Explore second-hand items or discover products from local shops.</p>
-
+    <section class="welcome-section">
       <div>
-        <h3>Buy from People</h3>
-        <p>Discover pre-owned items listed by people in your community.</p>
-      </div>
-
-      <div>
-        <h3>Shop Local</h3>
-        <p>Explore products offered by local shops and merchants.</p>
+        <span class="section-label">WELCOME TO LOCAL BAZAAR</span>
+        <h2>Your neighbourhood has more to offer.</h2>
+        <p>
+          Find useful products, discover local shops and connect
+          with people in your community—all in one place.
+        </p>
       </div>
     </section>
 
-    <section>
-      <h2>Built for Local Communities</h2>
-      <p>Our goal is to connect buyers, sellers and neighbourhood shops in one place.</p>
+    <section class="marketplace-section">
+      <div class="section-heading">
+        <div>
+          <span class="section-label">EXPLORE THE MARKETPLACE</span>
+          <h2>How would you like to shop?</h2>
+          <p>Choose the marketplace that fits your needs.</p>
+        </div>
+      </div>
+
+      <div class="marketplace-cards">
+        <article class="marketplace-card people-card">
+          <div class="card-icon" aria-hidden="true">♻️</div>
+          <span class="card-tag">PRE-LOVED FINDS</span>
+          <h3>Buy from People</h3>
+          <p>
+            Discover second-hand products listed by people in your
+            community. Find useful items and give them a new home.
+          </p>
+          <span class="card-note">Meet locally. Buy thoughtfully.</span>
+        </article>
+
+        <article class="marketplace-card shops-card">
+          <div class="card-icon" aria-hidden="true">🏪</div>
+          <span class="card-tag">YOUR LOCAL STORES</span>
+          <h3>Shop Local</h3>
+          <p>
+            Explore products from neighbourhood shops, compare
+            offerings and support local merchants.
+          </p>
+          <span class="card-note">Local shops. Everyday essentials.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="community-section">
+      <div class="community-icon" aria-hidden="true">🤝</div>
+      <div>
+        <span class="section-label">MADE FOR YOUR COMMUNITY</span>
+        <h2>Local connections. Better shopping.</h2>
+        <p>
+          Our vision is to bring buyers, individual sellers and local
+          businesses closer together through one neighbourhood marketplace.
+        </p>
+      </div>
+    </section>
+
+    <section class="coming-soon-section">
+      <h2>A marketplace built around you.</h2>
+      <p>
+        We're building a simpler way to discover what's available
+        around you. More local discoveries are on the way.
+      </p>
     </section>
   </main>
 
   <footer>
+    <a href="./" class="footer-brand">Local Bazaar</a>
+    <p>Your neighbourhood. Your marketplace.</p>
     <p>&copy; 2026 Local Bazaar. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
+```
